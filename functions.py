@@ -5,6 +5,7 @@ if not os.path.exists("todos.txt"):
         pass
 FILEPATH = 'todos.txt'
 
+
 def get_todos(filepath=FILEPATH):
     """
      Read a text file and return the list todo items
@@ -20,6 +21,7 @@ def write_todos(todos_arg, filepath=FILEPATH):
     """
     with open(filepath, 'w') as file_write:
         file_write.writelines(todos_arg)
+
 
 if __name__ == "__main__":
     print("Hello")
