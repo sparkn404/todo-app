@@ -1,8 +1,7 @@
-Don't be ruder
-This is 1.
-Oops, I deleted this
-This is three
-This is four.
-This is five.
-
-This is six.
+Empty list.
+Third line.
+Multiple lines?
+No.
+Empty list.
+Second line.
+Third line.
