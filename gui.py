@@ -5,7 +5,7 @@ sg.theme('DarkBlue')
 
 label = sg.Text("Type in a to-do")
 input_box = sg.InputText(tooltip="enter todo", key="todo")
-add_button = sg.Button("Add", font=('Helvetica', 15))
+add_button = sg.Button("Add", size=10)
 list_box = sg.Listbox(values=functions.get_todos(), key="todos", enable_events=True, size=(44, 10))
 edit_button = sg.Button("Edit", font=('Helvetica', 15))
 complete_button = sg.Button("Complete", font=('Helvetica', 15))
@@ -37,7 +37,7 @@ while True:
                 functions.write_todos(todos)
                 window['todos'].update(values=todos)
             except IndexError:
-                sg.popup("Please select an item first.", font=('Helvetica", 20'))
+                sg.popup("Please select an item first.", font='Helvetica", 20')
         case 'todos':
             window['todo'].update(value=values['todos'][0])
         case 'Complete':
@@ -49,7 +49,7 @@ while True:
                 window['todo'].update(value="")
                 window['todos'].update(values=todos)
             except IndexError:
-                sg.popup("Please select an item first.", font=('Helvetica", 20'))
+                sg.popup("Please select an item first.", font='Helvetica", 20')
         case "Exit":
             break
         case sg.WIN_CLOSED:
@@ -57,4 +57,3 @@ while True:
 
 print("Bye")
 window.close()
-
